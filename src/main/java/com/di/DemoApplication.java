@@ -4,6 +4,7 @@ import com.di.controllers.ConstructorInjectedController;
 import com.di.controllers.GetterInjectedController;
 import com.di.controllers.MyController;
 import com.di.controllers.PropertyInjectedController;
+import com.di.examplebeans.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,6 +16,10 @@ public class DemoApplication {
         final ApplicationContext ctx = SpringApplication.run(DemoApplication.class, args);
 
         final MyController myController = (MyController) ctx.getBean("myController");
+
+        final FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
+
+        System.out.println(fakeDataSource.getUser());
 
         System.out.println(myController.hello());
         System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
