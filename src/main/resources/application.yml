@@ -3,3 +3,10 @@ fake:
     username: John_JMS
     password: password
     dburl: http://fake.com
+
+---
+spring:
+  profiles: de
+fake:
+  jms:
+    username: John_JMS $$$$$$$ GERMAN
