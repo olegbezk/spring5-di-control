@@ -1,0 +1,36 @@
+# this is comment
+
+name: Oleg
+
+names: #Comment
+  - John
+  - Paul
+  - Ringo
+
+pound_sing: "#"
+
+book:
+  author: Joe Buck
+  publisher: random house
+
+truth: yes
+
+another_true: True
+
+more_true: true
+
+false: no # NO, false, FALSE
+
+string_val: "This is quote"
+
+colon_string: "my courses: one, two, three"
+
+include_new_lines: |
+  dsfsdf dsdsf
+  dfsfsdf sdfdsf
+  sdsgd sdghhf
+
+ignore_new_lines: >
+  this is
+  just one
+  long string
